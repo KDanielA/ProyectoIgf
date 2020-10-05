@@ -12,28 +12,40 @@
         <li><a href="tabla.html">Tabla </a> </li>
         <li><a href="Formulario.html">Formulario</a> </li>
     </ul>
-    <h1>Tabla</h1>
+    <h1>Formulario</h1>
+     
+    <form action="" method="">
+        <!--Nombre-->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
 
-    <table>
-        <thead>
-         <tr>
-             <th>Nombres</th>
-             <th>Apellidos</th>
-             <th>Sexo</th>
-         </tr>
-        </thead>
-        <tbody>
-          <tr>
-              <td>Pedro</td>
-              <td>Castillo</td>
-              <td>Femenino</td>
-          </tr>
-          <tr>
-            <td>Manuel</td>
-            <td>Lopez</td>
-            <td>Masculino</td>
-          </tr>
-        </tbody>
-    </table>
+        <!--Apellido-->
+        <label for="apellido">Apellido</label><br>
+        <input type="text" id="apellido" name="Apellido">
+        <br><br>
+
+        <!--Sexo-->
+        <label for="sexo">Sexo</label><br>
+        <input type="radio" id="M" name="sexo" value="M" checked>
+        <label for="M">Masculino</label><br>
+
+        <input type="radio" name="sexo" id="F" value="F">
+        <label for="F">Femenino</label>
+        <br><br>
+
+        <!--Carrera-->
+        <label for="carrera">Carrera:</label><br>
+        <select name="carrera" id="carrera">
+            <option value="ingSistemas">Ing.Sistemas Informaticos</option>
+            <option value="ingIndustrial">Ing.Industrial</option>
+            <option value="ingElectrica">Ing.Electrica</option>
+        </select>
+        <br><br>
+
+     
+
+    </form>
+   
 </body>
 </html>
