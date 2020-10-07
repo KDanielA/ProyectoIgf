@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html"> Inicio</a> r
+                    <a class="nav-link" href="index.html"> Inicio</a> 
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="tabla.html">Tabla </a>
@@ -35,22 +35,24 @@
     </nav>
 
 
-    <h1>Formulario</h1>
+    
       
     <div class="container">
+        <h1>Formulario</h1>
+        <small class="text-danger">* Obligatorio</small>
 
         <form action="" method="">
             
             <div class="form-row"> 
             <!--Nombre-->
             <div class="form-group col-md-6">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Nombre: <span class="text-danger">*</span> </label>
             <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
             </div>
 
             <!--Apellido-->
             <div class="form-group col-md-6">
-            <label for="apellido">Apellido</label>
+            <label for="apellido">Apellido: <span class="text-danger">*</span></label>
             <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="Apellido">
             </div>
             </div>
@@ -61,7 +63,7 @@
             <div class="form-row">
             <!--Carrera-->    
             <div class="form-group col-md-6">
-            <label for="carrera">Carrera:</label><br>
+            <label for="carrera">Carrera: <span class="text-danger">*</span></label><br>
             <select class="form-control" name="carrera" id="carrera">
             <option value="ingSistemas">Ing.Sistemas Informaticos</option>
             <option value="ingIndustrial">Ing.Industrial</option>
@@ -72,7 +74,7 @@
 
             <!--Sexo-->
             <div class="form-group col-md-6">
-             <label for="sexo">Sexo</label><br>
+             <label for="sexo">Sexo: <span class="text-danger">*</span></label><br>
   
              <!--Radiobutton masculino-->
              <div class="form-chech form-check-inline">
