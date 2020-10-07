@@ -54,8 +54,20 @@
                     <td>Gomez</td>
                     <td>Masculino</td>
                     <td>Ing. Industrial</td>
-                    <td> <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Editar"> <i class="fas fa-edit"></i>  </button> 
-                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Eliminar"> <i class="fas fa-trash-alt"></i>  </button>  </td>
+                    <td> 
+                    <button type="button" 
+                    class="btn btn-dark btn-editar" 
+                    data-toggle="tooltip" 
+                    data-placement="bottom"
+                    data-id-estudiante="1" 
+                    title="Editar"> <i class="fas fa-edit"></i>  
+                    </button> 
+                    <button type="button" 
+                    class="btn btn-dark btn-eliminar" 
+                    data-toggle="tooltip" 
+                    data-placement="bottom" 
+                    title="Eliminar"> <i class="fas fa-trash-alt"></i>  
+                    </button>  </td>
                 </tr>
             </tbody>
 
@@ -65,67 +77,25 @@
                     <td>Hernandez</td>
                     <td>Femenino</td>
                     <td>Ing. Civil</td>
-                    <td> <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Editar"> <i class="fas fa-edit"></i>  </button> 
-                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Eliminar"> <i class="fas fa-trash-alt"></i>  </button>  </td>
+                    <td> <button type="button"  
+                    class="btn btn-dark btn-editar" 
+                    data-toggle="tooltip" 
+                    data-placement="bottom"
+                    data-id-estudiante="2"
+                    title="Editar"> <i class="fas fa-edit"></i>  
+                    </button> 
+                    <button type="button" 
+                    class="btn btn-dark btn-eliminar" 
+                    data-toggle="tooltip" 
+                    data-placement="bottom" 
+                    title="Eliminar"> <i class="fas fa-trash-alt"></i>  
+                    </button> </td>
                 </tr>
             </tbody>
         </table>
 
     </div>
     <!--Final de la tabla-->
-
-    
-
-
-
-
-
-
-
-
-
-    <!--Tabla de contenido-->
-    <table>
-        <thead>
-            <tr>
-                <th>Nombres</th>
-                <th>Apellidos</th>
-                <th>Sexo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Pedro</td>
-                <td>Castillo</td>
-                <td>Masculino</td>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <td>Juan</td>
-                <td>Casta</td>
-                <td>Masculino</td>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <td>Marilla</td>
-                <td>DB</td>
-                <td>Femenino</td>
-            </tr>
-        </tbody>
-        tbody>
-            <tr>
-                <td>Marilla</td>
-                <td>Cristina</td>
-                <td>Femenino</td>
-            </tr>
-        </tbody>
-    </table>
-    <!--Fin de la tabla de contenido-->
-
-
-
 
 
 
@@ -147,5 +117,6 @@
         $('[data-toggle="tooltip"]').tooltip();
     });
 </script>
+<script src="tabla.js"></script>
 </body>
 </html>
