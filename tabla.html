@@ -54,8 +54,8 @@
                     <td>Gomez</td>
                     <td>Masculino</td>
                     <td>Ing. Industrial</td>
-                    <td> <button type="button" class="btn btn-dark"> <i class="fas fa-edit"></i>  </button> 
-                    <button type="button" class="btn btn-dark"> <i class="fas fa-trash-alt"></i>  </button>  </td>
+                    <td> <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Editar"> <i class="fas fa-edit"></i>  </button> 
+                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Eliminar"> <i class="fas fa-trash-alt"></i>  </button>  </td>
                 </tr>
             </tbody>
 
@@ -65,8 +65,8 @@
                     <td>Hernandez</td>
                     <td>Femenino</td>
                     <td>Ing. Civil</td>
-                    <td> <button type="button" class="btn btn-dark"> <i class="fas fa-edit"></i>  </button> 
-                    <button type="button" class="btn btn-dark"> <i class="fas fa-trash-alt"></i>  </button>  </td>
+                    <td> <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Editar"> <i class="fas fa-edit"></i>  </button> 
+                    <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Eliminar"> <i class="fas fa-trash-alt"></i>  </button>  </td>
                 </tr>
             </tbody>
         </table>
@@ -97,5 +97,10 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 </body>
 </html>
