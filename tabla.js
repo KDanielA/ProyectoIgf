@@ -8,4 +8,9 @@ $(document).ready(function(){
   $('.btn-eliminar').on('click',function(){
     $(this).closest('tr').hide();
    });
+
+   //accion para boton Nuevo Regustro
+  $('#btnNuevoRegistro').on('click',function(){
+    location.href= $(this).attr('data-url-formulario');
+   });
 });
