@@ -9,8 +9,23 @@ $(document).ready(function(){
     $(this).closest('tr').hide();
    });
 
-   //accion para boton Nuevo Regustro
+   //accion para boton Nuevo Registro
   $('#btnNuevoRegistro').on('click',function(){
     location.href= $(this).attr('data-url-formulario');
+   });
+
+   //accion para boton Tabla
+  $('#btnTabla').on('click',function(){
+    location.href= $(this).attr('data-url-tabla');
+   });
+
+   //accion para boton index
+  $('#btnInicio').on('click',function(){
+    location.href= $(this).attr('data-url-index');
+   });
+
+    //accion para boton formulario
+  $('#btnFormulario').on('click',function(){
+    location.href= $(this).attr('data-url-form');
    });
 });

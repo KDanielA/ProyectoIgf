@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><i class="fas fa-laptop-code"></i>/PRN</a>
+        <a class="navbar-brand" href="index.html"><i class="fas fa-laptop-code"></i>VA18045</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,81 +34,107 @@
         </div>
     </nav>
 
-
-    
-      
     <div class="container">
+
         <h1>Formulario</h1>
-        <small class="text-danger">* Obligatorio</small>
 
-        <form id="formularioEstudiante" action="" method="GET">
+    <div class="card">
+        <div class="card-header">
+          <div float-left>Informacion de Estudiante</div>
+          <small class="text-danger">* Obligatorio</small>
+        </div>
+        <div class="card-body">
+          
+            <form id="formularioEstudiante" action="" method="GET">
             
-            <div class="form-row"> 
-            <!--Nombre-->
-            <div class="form-group col-md-6">
-            <label for="nombre">Nombre: <span class="text-danger">*</span> </label>
-            <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
-            </div>
-
-            <!--Apellido-->
-            <div class="form-group col-md-6">
-            <label for="apellido">Apellido: <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="Apellido">
-            </div>
-            </div>
-
-
-            
-
-            <div class="form-row">
-            <!--Carrera-->    
-            <div class="form-group col-md-6">
-            <label for="carrera">Carrera: <span class="text-danger">*</span></label><br>
-            <select class="form-control" name="carrera" id="carrera">
-            <option value="ingSistemas">Ing.Sistemas Informaticos</option>
-            <option value="ingIndustrial">Ing.Industrial</option>
-            <option value="ingElectrica">Ing.Electrica</option>
-            </select>
-            </div>
-
-
-            <!--Sexo-->
-            <div class="form-group col-md-6">
-             <label for="sexo">Sexo: <span class="text-danger">*</span></label><br>
-  
-             <!--Radiobutton masculino-->
-             <div class="form-chech form-check-inline">
-             <input class="form-check-input" type="radio" id="M" name="sexo" value="M" checked>
-             <label class="form-check-label" for="M">Masculino</label>
-             </div>
-             
-             <div class="form-chech form-check-inline">
-             <input class="form-check-input" type="radio" name="sexo" id="F" value="F">
-             <label class="form-check-label" for="F">Femenino</label>
-             </div>
-             </div>
-            </div>
+                <div class="form-row"> 
+                <!--Nombre-->
+                <div class="form-group col-md-6">
+                <label for="nombre">Nombre: <span class="text-danger">*</span> </label>
+                <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
+                </div>
     
+                <!--Apellido-->
+                <div class="form-group col-md-6">
+                <label for="apellido">Apellido: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="Apellido">
+                </div>
+                </div>
+    
+    
+                
+    
+                <div class="form-row"> 
+                <!--Carnet-->
+                <div class="form-group col-md-4">
+                <label for="carnet">Carnet: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="Carnet" id="carnet" name="Carnet">
+                </div>
+
+                <!--Carrera-->    
+                <div class="form-group col-md-4">
+                <label for="carrera">Carrera: <span class="text-danger">*</span></label><br>
+                <select class="form-control" name="carrera" id="carrera">
+                <option value="ingSistemas">Ing.Sistemas Informaticos</option>
+                <option value="ingIndustrial">Ing.Industrial</option>
+                <option value="ingElectrica">Ing.Electrica</option>
+                </select>
+                </div>
+    
+    
+                <!--Sexo-->
+                <div class="form-group col-md-4">
+                 <label for="sexo">Sexo: <span class="text-danger">*</span></label><br>
+      
+                 <!--Radiobutton masculino-->
+                 <div class="form-chech form-check-inline">
+                 <input class="form-check-input" type="radio" id="M" name="sexo" value="M" checked>
+                 <label class="form-check-label" for="M">Masculino</label>
+                 </div>
+                 
+                 <div class="form-chech form-check-inline">
+                 <input class="form-check-input" type="radio" name="sexo" id="F" value="F">
+                 <label class="form-check-label" for="F">Femenino</label>
+                 </div>
+                 </div>
+                </div>
+        
+              
+    
+    
+            </form>
+
+        </div>
+        <div class="card-footer text-muted">
           <div class="float-right">
-            <!--boton limpiar-->
-            <button type="button"
-            id="btn-limpiar"
-            class="btn btn-outline-dark" 
-            data-toggle="tooltip" 
-            data-placement="bottom" 
-            title="Editar">Limpiar</button>
-            <!--Boton Enviar-->
-            <button type="submit" 
-            class="btn btn-dark" 
-            data-toggle="tooltip" 
-            data-placement="bottom" 
-            title="Editar">Enviar</button>
-          </div>
-
-
-        </form>
-
+                <!--boton limpiar-->
+                <button type="button"
+                id="btn-limpiar"
+                class="btn btn-outline-dark" 
+                data-toggle="tooltip" 
+                data-placement="bottom" 
+                title="Editar">Limpiar</button>
+                <!--Boton Enviar-->
+                <button type="submit" 
+                class="btn btn-dark" 
+                data-toggle="tooltip" 
+                data-placement="bottom" 
+                title="Editar">Enviar</button>
+              </div>
+        </div>
+      </div>
     </div>
+
+
+
+
+      
+    
+        
+        
+        
+
+    
      
     
 
